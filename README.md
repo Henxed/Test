@@ -31,6 +31,6 @@ npm run serve
 ```
 
 ##### Незабываем про API - нужно настроить URL, если он будет не на локалке.
-В папке **frontend ssr (vue2 + start)** файл ``nuxt.config.js`` строка 26
-В папке **frontend only vue 3** файл ``src\main.js`` строка 11
+- В папке **frontend ssr (vue2 + start)** файл ``nuxt.config.js`` строка 26
+- В папке **frontend only vue 3** файл ``src\main.js`` строка 11
 

@@ -12,7 +12,7 @@ class NewsController extends Controller
 
     public function index()
     {
-        return News::with('user')->orderBy('updated_at', 'DESC')->paginate();
+        return News::with('user')->orderBy('updated_at', 'DESC')->paginate(3);
     }
 
     public function show($id)
@@ -45,7 +45,7 @@ class NewsController extends Controller
 
         $news->update(Req::all());
 
-        return response()->json([200, 'Post updated']);
+        return response()->json('Post updated');
     }
 
     public function destroy(News $news)

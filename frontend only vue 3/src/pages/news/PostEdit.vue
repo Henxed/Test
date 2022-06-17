@@ -47,8 +47,8 @@ export default {
     submit: function(){
       this.processing = !this.processing
 
-        this.axios.put(`/news/${this.$route.params.id}`, this.form).then(() => {
-          this.$toast.success('Post updated')
+        this.axios.put(`/news/${this.$route.params.id}`, this.form).then((res) => {
+          this.$toast.success(res.data)
           this.processing = !this.processing
         }).catch( (error) => {
           this.processing = !this.processing

@@ -111,7 +111,7 @@ export default {
           }
         }).then(response => {
             this.isLoad = !this.isLoad
-            this.news.data.push(...response.data)
+            this.news.data.push(...response.data.data)
 
             if(response.last_page < this.page){
                 this.isLoadBtn = !this.isLoadBtn
