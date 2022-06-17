@@ -14,6 +14,7 @@ php artisan key:generate
 Делаем миграцию Laravel
 ```sh
 php artisan migrate
+php artisan serve
 ```
 
 Дальше на выбор, обычная vue.js
