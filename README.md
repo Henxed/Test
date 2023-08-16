@@ -8,7 +8,9 @@
 ```sh
 cd backend
 composer install
+copy('.env.example', '.env')
 php artisan key:generate
+php artisan migrate
 ```
 Настраиваем .env для подключения к БД
 Делаем миграцию Laravel
@@ -21,9 +23,10 @@ php artisan serve
 ```sh
 cd "frontend only vue 3"
 npm i
-npm run serve
+npm run serve #для локалки\разработки
+npm run build #для продакшена
 ```
-или nuxt.js, он же SSR для SEO
+или nuxt.js, он же SSR для SEO (он должен быть супервизоре или pm2)
 ```sh
 cd "frontend ssr (vue2 + start)"
 npm i
