@@ -2,7 +2,7 @@
 
 ## Установка
 
-Обязательна [Node.js](https://nodejs.org/) v16 не выше (на 17 и 18 есть баги и зависимости не стартуют).
+Обязательна [Node.js](https://nodejs.org/) v18+
 
 Устанавливаем бэк
 ```sh
@@ -23,6 +23,7 @@ php artisan serve
 ```sh
 cd "frontend only vue 3"
 npm i
+npm update
 npm run serve #для локалки\разработки
 npm run build #для продакшена
 ```
@@ -30,6 +31,7 @@ npm run build #для продакшена
 ```sh
 cd "frontend ssr (vue2 + start)"
 npm i
+npm update
 npm run serve
 ```
 
